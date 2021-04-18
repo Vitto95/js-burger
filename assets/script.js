@@ -33,7 +33,7 @@ calcPrice.addEventListener("click", function () {
     var yourPriceTot = initialPrice + priceAdded; //prezzo non scontato totale
 
     //Verifico se sono stati inseriti dei codici sconto
-    if (coupons.includes(coupon) === true) {
+    if (coupons.includes(coupon.value) === true) {
       yourPriceTot -= yourPriceTot * discount;
     }
 
